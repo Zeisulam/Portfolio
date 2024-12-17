@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    justify-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: calc(100vw - 12px);
+    overflow-x: hidden;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    
+     
+}
+
+
+a, .btn {
+    transition: all 1000 ms ease;
+}
+
+.left a {
+    color: rgb(0, 145, 255); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-underline-position: above;
+    text-decoration-color: rgb(0, 145, 255);
+}  
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    align-items: center;
+}
+
+.left {
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 160px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+#hamburger {
+    display: none;
+    justify-content: space-around;
+}
+
+.nav-hamburger {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+position: absolute;
+top: 100%;
+right: 0;
+background-color: white;
+width: fit-content;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+  
+  .menu-links li {
+    list-style: none;
+}
+  
+  .menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+    color: wheat;
+}
+  
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+  
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+  
+
+h1,h2 {
+    color: white;
+    margin: 10px 10px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.mother-profile {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 86vh;
+    justify-content: center;
+    min-height: fit-content;
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromBottom 1.5s ease-in-out forwards;
+}
+
+.profile {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: auto 0;
+    justify-content: center;
+    border: 3px solid rgb(0, 153, 255); 
+    border-radius: 50%;
+    box-shadow: 0 0px 30px rgba(86, 180, 212, 0.648);
+}
+
+.p2, .p1 {
+    color: rgb(0, 145, 255);
+    margin-bottom: 15px;
+}
+
+.text-container {
+    text-align: center;
+    align-self: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.icon:hover {
+    cursor: pointer;
+}
+
+
+.socials-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.btn-container {
+    justify-content: center;
+    display: flex;
+}
+
+.btn-color {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(51, 147, 231);
+    padding: .8rem;
+    width: 150px;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(28, 82, 136);
+    text-decoration: none;
+}
+
+.btn-color:link,
+.btn-color:visited {
+    text-decoration: none;
+}
+
+.btn-color:hover {
+    cursor: pointer;
+    background: rgb(0, 157, 255);
+    color: black;
+    border: 0.1rem solid rgb(0, 157, 255);
+}
+
+/* about */
+
+.p3 {
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+.p4 {
+    background-color: rgb(0, 157, 255);
+    width: 230px; 
+    height: 2px;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.about-me {
+    display: flex;
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    margin: 0;  
+           
+}
+.about-container {
+    width: 70%;
+    border-radius: 1rem;
+    border: solid 2px;color: rgb(118, 184, 242);
+    margin: 40px;
+    box-shadow: 0 0px 30px rgba(86, 180, 212, 0.648);
+    opacity: ; /* Ensure it's visible initially */
+    transform: translateY(0); /* Start at the normal position */
+    animation: fadeInFromBottom 1.5s ease-in-out forwards;
+}
+
+.about-content {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.pfp-icon {
+    margin: 30px;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;    
+    border-radius: 50%;
+    
+}
+
+.skill-container {
+    margin: 40px;
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromLeft 1.5s ease-in-out forwards 1s;
+}
+
+.skills-me {
+    display: flex;
+    margin: 10px;
+}
+
+.skill-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.s1, .s2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.pp1 {
+    border: solid 2px;
+    border-color: rgb(118, 184, 242);
+    box-shadow: 0 0px 15px rgba(118, 184, 242, 0.648);
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project */
+
+.projects {
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromBottom 1.5s ease-in-out forwards;
+}
+
+.project {
+    margin: 30px;
+    justify-items: center;
+    
+}
+
+.project-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.pos1, .pos2, .cisco {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pos1:hover, .pos2:hover, .cisco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-project:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.project-img {
+    width: 280px;
+    height:90%;
+    border-radius: 8px;
+    box-shadow: 0 0px 15px rgba(131, 131, 131, 0.648);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.pos1, .pos2, .cisco {
+    border-radius: 10px;
+    border: solid 1px; color: rgb(118, 184, 242);
+    box-shadow: 0 0px 15px rgba(86, 180, 212, 0.648);
+    flex:0 1;
+    margin: 30px;
+    width: 300px;
+    justify-items: center;
+}
+
+.img-container {
+    margin: 20px;
+    height: 100%;
+}
+
+.project-text {
+    justify-items: center;
+    align-content: center;
+    margin: 15px;
+
+}
+
+.title-project {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+
+.link {
+    justify-self: end;
+    margin: 10px;
+}
+
+.icon-project {
+    width: 20px;
+    height: 20px;
+}
+
+.commission-container {
+    display: flex;
+    justify-self: center;
+    align-items: center; 
+}
+
+.commission {
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromBottom 1.5s ease-in-out forwards 1s;
+}
+
+/* Contacts */
+.contacts-container {
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromBottom 1.5s ease-in-out forwards;
+}
+.contact-text{
+    font-size: 30px;
+}
+
+.contacts-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between rows */
+    justify-content: center;
+    height: 50vh;
+}
+
+.first-row, .second-row {
+    display: flex;
+    justify-content: center; /* Align items at opposite ends */
+    gap: 4rem; /* Add space between columns */
+    
+}
+
+.first-row p, .second-row p {
+    margin: 0;
+    text-align: left;
+}
+
+.contacts-info {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px; color: rgb(118, 184, 242);
+    box-shadow: 0 0px 15px rgba(86, 180, 212, 0.648);
+    align-items: center;
+    gap: 1rem;
+    margin: 20px;
+}
+
+.contacts-icon {
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}
+.inside-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-deets{
+    font-size: 20px;
+}
+.contacts-deets {
+    font-size: 15px;
+}
+
+.socials-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.socials-info {
+    display: flex; /* Makes the container a flexbox */
+    gap: 1rem; /* Adds space between the images */
+}

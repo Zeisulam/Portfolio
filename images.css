@@ -1,0 +1,187 @@
+@media screen and (max-width: 800px) {
+    #default-nav{
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+
+    }
+
+    .left {
+        padding: 0;
+    }
+    .mother-profile {
+        flex-direction: column; /* Stack text and profile image vertically */
+        height: auto;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .profile {
+        width: 280px;
+        height: 280px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 35px; /* Reduce heading size further */
+    }
+
+    .p1, .p2 {
+        font-size: 1rem;
+    }
+
+    .btn-color {
+        width: 130px;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+    
+@media (max-width: 1024px) {
+
+    .about-container {
+        width: 85%;
+        margin: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pfp-icon {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .skill-content {
+        align-items: center;
+    }
+
+    .s1, .s2 {
+        gap: 2rem;
+        flex-direction: column;
+    }
+    
+    .contacts-container {
+        max-width: 1025px; /* Fixed max width */
+        margin: 0 auto; /* Center the content horizontally */
+        padding: 20px; /* Add some spacing */
+        box-sizing: border-box;
+    }
+    
+    .contacts-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        height: auto; /* Adjust height dynamically */
+    }
+    
+    /* Rows: Responsive Alignment */
+    .first-row, .second-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Wrap items if screen is smaller */
+        gap: 2rem; /* Reduced gap for better spacing */
+    }
+    
+    .contacts-info {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        border-radius: 10px;
+        border: solid 1px rgb(118, 184, 242);
+        box-shadow: 0 0px 15px rgba(86, 180, 212, 0.648);
+        align-items: center;
+        gap: 1rem;
+        margin: 10px; /* Adjust margin for better spacing */
+    }
+    
+    /* Adjust fonts and icons for smaller screens */
+    .contact-text {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .contacts-icon {
+        margin-left: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .socials-icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .socials-info {
+        display: flex;
+        gap: 1rem;
+    }
+
+    
+    
+}
+
+@media (max-width: 768px) {
+    .contacts-info {
+        
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .contacts-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-deets {
+        font-size: 16px;
+    }
+
+    .contacts-deets {
+        font-size: 13px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
