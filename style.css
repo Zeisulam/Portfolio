@@ -104,15 +104,15 @@ nav {
 }
 
 .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-    z-index: 1;
+position: absolute;
+top: 100%;
+right: 0;
+background-color: white;
+width: fit-content;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3 ease-in-out;
+        z-index: 1;
 }
 
 .menu-links a {
@@ -356,7 +356,21 @@ h1,h2 {
     justify-items: center;
     
 }
-
+.hatdog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: 1500px;
+    opacity: 0;
+    transform: translateY(50px); 
+    animation: fadeInFromBottom 1.5s ease-in-out forwards;
+}
 .project-container {
     flex-wrap: wrap;
     display: flex;
@@ -377,11 +391,12 @@ h1,h2 {
 .icon-project:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .project-img {
     width: 280px;
-    height:90%;
+    height:180px;
     border-radius: 8px;
     box-shadow: 0 0px 15px rgba(131, 131, 131, 0.648);
     align-items: center;
